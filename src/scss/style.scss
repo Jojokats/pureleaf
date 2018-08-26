@@ -1,0 +1,359 @@
+// Main Sass File
+
+$accent-color: #B0E575;
+$gray-light: #E5E5E5;
+$dark-gray: #292929;
+$body: #292929;
+$med-gray: #616161;
+$primary-overlay:rgba(48, 92,149,0.45);
+$body-text: #616161;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $body;
+}
+
+// **************
+.btn-success {
+  color: #FFFFFF;
+  background-color: #C5D6A8;
+  border-color: #C5D6A8;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #FFFFFF;
+  background-color: #9EB871;
+  border-color: #C5D6A8;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #C5D6A8;
+  border-color: #C5D6A8;
+}
+
+.btn-success .badge {
+  color: #C5D6A8;
+  background-color: #FFFFFF;
+}
+
+
+.btn-outline-info {
+  color: #ffffff;
+  background-color: #FC7F2E;
+  border-color: #FC7F2E;
+}
+
+.btn-outline-info:hover,
+.btn-outline-info:focus,
+.btn-outline-info:active,
+.btn-outline-info.active,
+.open .dropdown-toggle.btn-outline-info {
+  color: #ffffff;
+  background-color: #DB6F28;
+  border-color: #FC7F2E;
+}
+
+.btn-outline-info:active,
+.btn-outline-info.active,
+.open .dropdown-toggle.btn-outline-info {
+  background-image: none;
+}
+
+.btn-outline-info.disabled,
+.btn-outline-info[disabled],
+fieldset[disabled] .btn-outline-info,
+.btn-outline-info.disabled:hover,
+.btn-outline-info[disabled]:hover,
+fieldset[disabled] .btn-outline-info:hover,
+.btn-outline-info.disabled:focus,
+.btn-outline-info[disabled]:focus,
+fieldset[disabled] .btn-outline-info:focus,
+.btn-outline-info.disabled:active,
+.btn-outline-info[disabled]:active,
+fieldset[disabled] .btn-outline-info:active,
+.btn-outline-info.disabled.active,
+.btn-outline-info[disabled].active,
+fieldset[disabled] .btn-outline-info.active {
+  background-color: #FC7F2E;
+  border-color: #FC7F2E;
+}
+
+.btn-outline-info .badge {
+  color: #FC7F2E;
+  background-color: #ffffff;
+}
+
+
+
+// *************
+
+body {
+  margin-top: 105px;
+  color: $body-text;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-brand span {
+  font-size: 1.1rem;
+  color: $dark-gray;
+  padding-left: 6px;
+}
+
+.navbar {
+  box-shadow: 1px 1px 7px $gray-light;
+  opacity: 0.9;
+  background: #fff;
+
+  .tea-logo {
+    width: 120px;
+  }
+
+  .nav-item {
+    font-size: .85rem;
+  }
+}
+
+#showcase {
+  .show {
+    padding-left: 3rem;
+  }
+  h1 {
+    font-size: 3rem !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 7rem;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  img {
+      margin-top: 40px;
+      // margin-left: 30px;
+      width: 70%
+  }
+  @media screen and (min-width: 768px) {
+    img {
+        margin-top: 10px;
+        margin-left: 100px;
+
+    }
+  }
+
+  .leaf {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    z-index: -10;
+    opacity: .3;
+    margin-left: 15%;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      margin: auto;
+    }
+
+  }
+
+  .hide {
+    display: none;
+  }
+
+  @media screen and (max-width: 812px) {
+    .leaf {
+      display: none;
+    }
+    .show {
+      padding: 0 10px;
+    }
+    h1 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 2.5rem !important;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    img {
+      padding-left: 75px;
+      margin-top: 10px;
+      width: 90%;
+    }
+    .hide {
+      display: inline;
+    }
+
+    .btn-show {
+      display: none;
+    }
+
+  }//media
+
+}// showcase
+
+#description {
+  margin: 60px 0;
+
+  background: url('../img/flwr-wht-lite.png');
+  // background-color: #ccc;
+  background-repeat: no-repeat;
+  position: relative;
+  // background-position: right top;
+  background-position: 90% 0%;
+  background-size: 400px 300px;
+  padding: 80px 0 0px;
+
+  // opacity: 0.3;
+
+
+  // background-size: cover;
+
+  .description-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .description-leaf{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .description-leaf{
+      width: 50%;
+      z-index: -10;
+      opacity: .3;
+      margin-left: 25%;
+      display: inline;
+    }
+
+  }
+}
+
+#info {
+  position:relative;
+  margin-bottom: 100px;
+  .info-sm-leaf {
+    width:60%;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 5px;
+    z-index: -10;
+  }
+
+  .girl,
+  .tea-cup
+   {
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .hot-tea {
+    width:300px;
+    height:500px;
+    object-fit:cover;
+    margin-top: 60px;
+    margin-left: 20px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .tea-cup {
+    height:350px;
+    object-fit:cover;
+    margin-top: -50px;
+  }
+
+  .info-2, .info-3 {
+    margin-top: 150px;
+  }
+
+  .info-1,
+  .info-3 {
+    margin-top: 80px;
+  }
+
+  .read {
+    margin-bottom: 60px;
+  }
+  .more {
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    .info-1 {
+      margin-top: 0;
+    }
+    .info-2 {
+      margin-top: 50px;
+    }
+    .info-3 {
+      margin-top: 60px;
+    }
+    .hot-tea {
+      margin-top: 10px;
+      width: 500px;
+      margin-left: 0;
+    }
+    .tea-cup {
+      width: 600px;
+    }
+    .more {
+      margin-bottom: 30px;
+    }
+  }
+}//#info
+
+#video-play {
+  padding-top: 60px;
+  position:relative;
+  min-height: 300px;
+  background:url('../img/field.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  // background-position: 0 -2000px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  background-size: cover;
+  a.video {
+    color: #fff;
+    font-size: 2rem
+  }
+  h2 {
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+
+#main-footer {
+  background: #C5D6A8;
+  color: #fff;
+}
