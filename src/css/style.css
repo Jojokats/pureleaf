@@ -261,6 +261,7 @@ body {
   color: #292929; }
 
 #login {
-  margin: 150px 0 200px; }
+  margin-top: 120px;
+  height: 100vh; }
   #login .login-btn {
     margin: 40px 0 10px; }
