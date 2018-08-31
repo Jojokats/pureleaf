@@ -40,7 +40,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
   background-color: #C5D6A8;
-  border-color: #C5D6A8; }
+  border-color: #C5D6A8;
+  z-index: 1; }
 
 .btn-success .badge {
   color: #C5D6A8;
@@ -110,7 +111,7 @@ body {
   .navbar .tea-logo {
     width: 120px; }
   .navbar .nav-item {
-    font-size: .85rem; }
+    font-size: 1.2rem; }
 
 #showcase .show {
   padding-left: 3rem; }
@@ -239,7 +240,7 @@ body {
       margin-bottom: 30px; } }
 
 #video-play {
-  padding-top: 60px;
+  padding-top: 40px;
   position: relative;
   min-height: 300px;
   background: url("../img/field.jpg");
@@ -252,13 +253,42 @@ body {
   #video-play a.video {
     color: #fff;
     font-size: 2rem; }
+  #video-play .fa-play {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 14px 12px 15px;
+    border-radius: 3px; }
   #video-play h2 {
+    margin-top: 20px;
     color: #fff;
     font-size: 3rem; }
 
+#signup {
+  padding: 60px 0 0; }
+  #signup h2 {
+    margin-top: 60px; }
+  #signup .signup-text {
+    font-size: 1.4rem;
+    margin: 10px 0 30px; }
+  #signup .signup-img {
+    opacity: .1;
+    margin-top: -260px;
+    height: auto;
+    z-index: -1; }
+  @media screen and (min-width: 768px) {
+    #signup .signup-img {
+      width: 40%; } }
+
 #main-footer {
   background: #C5D6A8;
-  color: #292929; }
+  color: #292929;
+  letter-spacing: .8px; }
+  #main-footer .footer-copy {
+    padding-top: 30px;
+    padding: 30px 0 5px;
+    font-size: 1.1rem; }
+    #main-footer .footer-copy a {
+      color: #FC7F2E; }
 
 #login {
   margin-top: 120px;
